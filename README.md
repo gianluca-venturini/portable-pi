@@ -1,5 +1,5 @@
 
-diskutil erasevolume HFSX "openwrt" `hdiutil attach -nomount ram://524288`
+diskutil erasevolume HFSX "openwrt" `hdiutil attach -nomount ram://2097152`
 docker run -it --entrypoint /bin/bash --mount=type=bind,source=/Volumes/openwrt,target=/openwrt/ debian@sha256:5a12d4d61ffc727a1343bfed7ef1327e7dfa499483e9458ef9c48e7a990b3e64
 
 apt-get update
